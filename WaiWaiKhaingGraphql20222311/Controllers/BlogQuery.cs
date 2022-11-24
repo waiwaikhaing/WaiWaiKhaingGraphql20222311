@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using DotNetCoreCRUDAssign.Shared.Models;
+using Newtonsoft.Json;
 using WaiWaiKhaingGraphql20222311.Models;
 
 namespace WaiWaiKhaingGraphql20222311.Controllers
@@ -13,6 +14,7 @@ namespace WaiWaiKhaingGraphql20222311.Controllers
             Domainurl = "https://restandhttp-2022.herokuapp.com";
             Endpoint = "api/Blog";
         }
+
         public async Task<OurApi_BlogResponseModel> GetBlogListAsync()
         {
             OurApi_BlogResponseModel model = new OurApi_BlogResponseModel();

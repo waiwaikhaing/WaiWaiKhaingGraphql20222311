@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DotNetCoreCRUDAssign.Shared.Models
 {
-    [Table("Tbl_Category")]
+   // [Table("Tbl_Category")]
     public class CategoryModel
     {
         [Key]
