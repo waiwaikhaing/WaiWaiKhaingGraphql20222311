@@ -4,6 +4,7 @@ using System;
 
 namespace WaiWaiKhaingGraphql20222311.Controllers
 {
+    [ExtendObjectType("Query")]
     public class CategoryQuery
     {
         List<CategoryModel> _categories = new List<CategoryModel>();

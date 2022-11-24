@@ -4,6 +4,7 @@ using WaiWaiKhaingGraphql20222311.Models;
 
 namespace WaiWaiKhaingGraphql20222311.Controllers
 {
+    [ExtendObjectType("Query")]
     public class BlogQuery
     {
         private readonly string Domainurl;

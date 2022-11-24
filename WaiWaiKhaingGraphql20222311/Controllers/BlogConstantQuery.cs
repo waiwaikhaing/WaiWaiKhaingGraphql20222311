@@ -3,6 +3,7 @@ using WaiWaiKhaingGraphql20222311.Models;
 
 namespace WaiWaiKhaingGraphql20222311.Controllers
 {
+    [ExtendObjectType("Query")]
     public class BlogConstantQuery
     {
         List<BlogModel> _blog = new List<BlogModel>();
@@ -22,11 +23,11 @@ namespace WaiWaiKhaingGraphql20222311.Controllers
             }
         }
 
-        public List<BlogModel> BlogList()
+        public List<BlogModel> BlogConstantList()
         {
             return _blog;
         }
-        public BlogModel BlogById(string id)
+        public BlogModel BlogConstantById(string id)
         {
             int _id = Convert.ToInt32(id);
             BlogModel item = _blog.FirstOrDefault(x => x.Blog_Id == _id);

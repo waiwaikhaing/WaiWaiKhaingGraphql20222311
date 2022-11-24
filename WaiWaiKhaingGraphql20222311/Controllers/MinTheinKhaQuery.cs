@@ -6,6 +6,7 @@ using WaiWaiKhaingGraphql20222311.Models;
 
 namespace LatHtaukBayDin20221120GraphQL.Api.Controllers
 {
+    [ExtendObjectType("Query")]
     public class MinTheinKhaQuery
     {
         private readonly IHttpClientFactory _httpClientFactory;
