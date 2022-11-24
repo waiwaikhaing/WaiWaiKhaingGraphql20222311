@@ -33,9 +33,5 @@ namespace WaiWaiKhaingGraphql20222311.Controllers
             BlogModel item = _blog.FirstOrDefault(x => x.Blog_Id == _id);
             return item;
         }
-
-
-
-
     }
 }
