@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
-builder.Services.AddGraphQLServer().AddQueryType<MinTheinKhaQuery>();
+//builder.Services.AddGraphQLServer().AddQueryType<MinTheinKhaQuery>();
 //builder.Services.AddGraphQLServer().AddQueryType<BlogQuery>();
 //builder.Services.AddGraphQLServer().AddQueryType<CategoryQuery>();
 builder.Services.AddGraphQLServer().AddQueryType<BlogConstantQuery>();
@@ -22,4 +22,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapGraphQL();
+
 app.Run();
